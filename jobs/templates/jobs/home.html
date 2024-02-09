@@ -1,14 +1,15 @@
 
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
 
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Album example · Bootstrap v5.3</title>
+    <title>Tatjana Kovac</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -166,15 +167,15 @@
 <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tatjana Kovac</a>
+          <a class="navbar-brand" href="{%url 'home'%}">Tatjana Kovac</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="#">Twitter</a>
-              <a class="nav-link" href="#">Resume</a>
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="{% static 'Youth_of_the_Apocalipse.pdf' %}">Resume</a>
+              <a class="nav-link" href="{%url 'allblogs'%}">Blog</a>
             </div>
           </div>
         </div>
@@ -191,6 +192,7 @@
         <p>
           <a href="mailto:tasa.kovac2001@gmail.com" class="btn btn-primary my-2">Email me</a>
         </p>
+        <img class="img-fluid" src="{% static 'DSC_0103.JPG' %}" height="300" width="300"/>
       </div>
     </div>
   </section>
