@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ul(v!#g9oaq+$3hzb4zuna!l(b1urk*qtk9--mcs0d$#!jy^ql
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['137.184.95.69']
 
 
 # Application definition
@@ -137,7 +137,7 @@ MEDIA_ROOT= BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass 
 
